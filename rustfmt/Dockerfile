@@ -14,8 +14,8 @@ RUN rustup component add rustfmt
 RUN apt-get update -qq && apt-get install -qqy --no-install-recommends \
   curl=7.* \
   jq=1.5* \
-  bash=4.4.18 \
-  git=1:2.11.4 \
+  bash=4.4.* \
+  git=1:2.11.* \
   && rm -rf /var/lib/apt/lists/*
 
 COPY lib.sh /lib.sh
