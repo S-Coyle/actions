@@ -12,10 +12,10 @@ LABEL "maintainer"="Bruno Tavares <connect+githubactions@bltavares.com>"
 RUN rustup component add clippy && cargo install cargo-fix --version 0.4.1
 
 RUN apt-get update -qq && apt-get install -qqy --no-install-recommends \
-  curl=7.52* \
+  curl=7.68.0 \
   jq=1.5* \
-  bash=4.4* \
-  git=1:2.11* \
+  bash=4.4.18 \
+  git=1:2.11.4 \
   libssl-dev=1.1* \
   zlib1g-dev=1:1.2* \
   pkg-config=0.29* \
