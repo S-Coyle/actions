@@ -20,4 +20,4 @@ RUN apt-get update -qq && apt-get install -qqy --no-install-recommends \
 
 COPY lib.sh /lib.sh
 COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"] 
